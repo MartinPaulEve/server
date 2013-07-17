@@ -16,7 +16,13 @@ html(lang='en')
     link(rel='stylesheet', href='/css/font-awesome.min.css')
     link(rel='stylesheet', href='/css/app.css')
 
-  body(style='margin-top: 60px')
+  body(style='padding:0')
+    .alert This is a prototype version. A beta version is coming soon.
+
+    // Main body
+    .container(style='padding:0 20px 0')
+      block content
+
     // google analytics
     script
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,36 +32,6 @@ html(lang='en')
 
       ga('create', 'UA-42412544-1', 'herokuapp.com');
       ga('send', 'pageview');
-
-    header
-      block header
-        .navbar.navbar-inverse.navbar-fixed-top
-          .navbar-inner
-            .container
-              button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.brand(href='/') Open Access Button
-              .nav-collapse.collapse
-                ul.nav
-                  li: a(href='/') Home
-                  li: a(href='/stories') Stories
-                  li: a(href='/map') Map
-                  li: a(href='/about') About
-                  li: a(href='/download.json') API
-
-    // Main body
-    .container
-      block content
-
-    footer
-      block footer
-        #footer
-          .container
-            p.muted All site content is licensed under a 
-              a(href='http://creativecommons.org/licenses/by/3.0/us/') Creative Commons Attribution License
-              |.
 
     script(src='/js/jquery.min.js')
     script(src='/js/bootstrap.js')

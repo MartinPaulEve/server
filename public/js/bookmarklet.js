@@ -62,7 +62,6 @@
   iframe.style.zIndex = "2147483640";
   iframe.style.boxSizing = "border-box";
   iframe.style.MozBoxSizing = "border-box";
-  iframe.style.padding = "15px";
   iframe.style.borderLeft = "2px #555 dashed";
   iframe.style.background = "white";
   iframe.style.height = "100%";
