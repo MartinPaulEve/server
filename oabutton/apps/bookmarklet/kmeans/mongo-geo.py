@@ -2,6 +2,9 @@
 This script computes the kmeans cluster using pure python. 
 
 It's slow, but will work.
+
+usage:
+    MONGOLAB_URI=<YOUR_MONGOLAB_URI> python mongo-geo.py
 """
 
 from pymongo import MongoClient
